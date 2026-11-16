@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 420">
+<defs><linearGradient id="ceramic" x2="0" y2="1"><stop stop-color="#fff8ec"/><stop offset="1" stop-color="#c9ad91"/></linearGradient><linearGradient id="coffee" x2="0" y2="1"><stop stop-color="#8b5938"/><stop offset="1" stop-color="#3b2419"/></linearGradient></defs>
+<ellipse cx="250" cy="355" rx="180" ry="27" fill="#9d7c60" opacity=".25"/>
+<path d="M120 145h245l-24 160q-8 42-98 42t-99-42z" fill="url(#ceramic)" stroke="#a88b70" stroke-width="5"/>
+<path d="M365 175q100-20 80 75-12 58-93 40" fill="none" stroke="#e9d7c2" stroke-width="25"/>
+<ellipse cx="242" cy="148" rx="123" ry="24" fill="#4a2d20"/>
+<ellipse cx="242" cy="145" rx="110" ry="16" fill="url(#coffee)"/>
+<path d="M210 146q28-27 58 0-30 25-58 0zm-42 0q18-18 36 0-18 17-36 0z" fill="#e9c9a5" opacity=".9"/>
+<path d="M228 132q-30-46 4-77m32 77q-15-42 20-67" fill="none" stroke="#fff3e4" stroke-width="8" stroke-linecap="round" opacity=".65"/>
+<path d="M145 220q90 28 190 0" fill="none" stroke="#fff" stroke-width="5" opacity=".35"/>
+<path d="M160 335q80 30 160 0" fill="none" stroke="#a98b70" stroke-width="4" opacity=".5"/>
+<g fill="#a66d45"><circle cx="90" cy="330" r="9"/><ellipse cx="405" cy="340" rx="17" ry="9" transform="rotate(35 405 340)"/></g>
+</svg>
