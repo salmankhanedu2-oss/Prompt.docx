@@ -1,107 +1,161 @@
+
+<!--
+    Website Project: Deja & Brew Cafe
+    Student Name: Salman Khan
+    Roll Number: 26I3141
+    Project: Cafe Shop Website
+-->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Deja and Brew Cafe — freshly brewed coffee, a warm atmosphere, and easy ordering.">
-  <title>Deja & Brew Cafe</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Deja & Brew Cafe</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header class="site-header">
-    <a class="brand" href="#home" aria-label="Deja and Brew home">
-      <span class="brand-mark">D<span>&</span>B</span>
-      <span class="brand-name">deja <b>&</b> brew<small>COFFEE • GOOD MOOD</small></span>
-    </a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
-    <nav class="nav" id="nav">
-      <a class="nav-link active" href="#home">Home</a>
-      <a class="nav-link" href="#menu">Menu & Prices</a>
-      <a class="nav-link" href="#contact">Contact & Delivery</a>
-    </nav>
-    <a class="header-order" href="#menu">Explore menu <span>↗</span></a>
-  </header>
 
-  <main>
-    <section class="page hero-page active-page" id="home">
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <p class="eyebrow"><span></span> YOUR DAILY COFFEE ESCAPE</p>
-        <h1>A little pause.<br><em>A lot of coffee.</em></h1>
-        <p class="hero-copy">Slow down, sip something lovely, and make today a little warmer at Deja & Brew Cafe.</p>
-        <div class="hero-actions">
-          <a class="btn btn-light" href="#menu">Explore our menu <span>→</span></a>
-          <a class="text-link" href="#contact">Find us & order <span>↗</span></a>
+    <!-- Navigation Bar -->
+
+    <header>
+
+        <h2>Deja & Brew Cafe</h2>
+
+        <nav>
+
+            <button onclick="showPage('home')">
+                Home
+            </button>
+
+            <button onclick="showPage('menu')">
+                Menu & Prices
+            </button>
+
+            <button onclick="showPage('contact')">
+                Contact
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <!-- FIRST PAGE: HOME -->
+
+    <section id="home" class="page active">
+
+        <div class="home-content">
+
+            <h1>Welcome to Deja & Brew Cafe</h1>
+
+            <h2>Fresh Coffee, Fresh Mood!</h2>
+
+            <p>
+                Enjoy the best coffee with a beautiful
+                atmosphere and delicious taste.
+            </p>
+
+            <button onclick="showPage('menu')">
+                Explore Our Menu
+            </button>
+
         </div>
-        <div class="hero-note"><span class="note-line"></span> BREWED FRESH. SERVED WITH HEART.</div>
-      </div>
-      <div class="hero-stamp"><span>GOOD<br>COFFEE</span><b>✳</b><span>GOOD<br>COMPANY</span></div>
-      <a class="scroll-cue" href="#menu">SCROLL TO DISCOVER <span>↓</span></a>
+
     </section>
 
-    <section class="page menu-page" id="menu">
-      <div class="section-heading">
-        <p class="eyebrow dark"><span></span> MADE FOR YOUR MOMENT</p>
-        <h2>Find your <em>favourite.</em></h2>
-        <p>Simple classics, made to brighten your day.</p>
-      </div>
-      <div class="menu-layout">
-        <div class="menu-photo">
-          <img src="assets/coffee-cup.svg" alt="Illustration of a freshly brewed cup of coffee">
-          <div class="photo-caption"><span>01 / THE CLASSICS</span><b>A good day starts here.</b></div>
-        </div>
-        <div class="menu-list">
-          <div class="menu-topline"><span>OUR COFFEE MENU</span><span>PRICE (PKR)</span></div>
-          <article class="menu-item">
-            <div><h3>Black Coffee</h3><p>Bold, smooth, and beautifully simple.</p></div>
-            <strong>120 <small>PKR</small></strong>
-          </article>
-          <article class="menu-item">
-            <div><h3>White Coffee</h3><p>Comforting coffee with a creamy finish.</p></div>
-            <strong>190 <small>PKR</small></strong>
-          </article>
-          <div class="menu-note"><span>✳</span><p>Have a question about an item or want to place an order? Get in touch — we'd love to help.</p></div>
-          <a class="btn btn-dark" href="#contact">Contact & delivery <span>→</span></a>
-        </div>
-      </div>
-      <p class="price-note">Prices shown are the prices supplied in the original project file. Please update them if your cafe's prices change.</p>
+
+    <!-- SECOND PAGE: MENU AND PRICES -->
+
+    <section id="menu" class="page">
+
+        <h1>Our Coffee Menu</h1>
+
+        <table>
+
+            <tr>
+                <th>Item</th>
+                <th>Price (PKR)</th>
+            </tr>
+
+            <tr>
+                <td>Black Coffee</td>
+                <td>120</td>
+            </tr>
+
+            <tr>
+                <td>White Coffee</td>
+                <td>190</td>
+            </tr>
+
+        </table>
+
+        <button onclick="showPage('contact')">
+            Contact Us
+        </button>
+
     </section>
 
-    <section class="page contact-page" id="contact">
-      <div class="contact-intro">
-        <p class="eyebrow"><span></span> LET'S MAKE IT A COFFEE DATE</p>
-        <h2>Your next cup<br>is <em>calling.</em></h2>
-        <p>Questions, takeaway, or delivery enquiries? Send us a message and we'll be happy to hear from you.</p>
-        <div class="contact-details">
-          <div><span class="detail-icon">✉</span><p><small>EMAIL</small><b>Add your cafe email</b></p></div>
-          <div><span class="detail-icon">⌖</span><p><small>LOCATION</small><b>Add your cafe address</b></p></div>
-          <div><span class="detail-icon">◷</span><p><small>OPENING HOURS</small><b>Add your opening hours</b></p></div>
-        </div>
-      </div>
-      <div class="contact-card">
-        <div class="card-heading"><span>01 — SAY HELLO</span><span>☕</span></div>
-        <h3>Send us a message</h3>
-        <form id="contactForm">
-          <label for="customerName">Your name</label>
-          <input id="customerName" name="name" type="text" placeholder="e.g. Alex" required>
-          <label for="customerEmail">Email address</label>
-          <input id="customerEmail" name="email" type="email" placeholder="you@example.com" required>
-          <label for="customerMessage">How can we help?</label>
-          <textarea id="customerMessage" name="message" rows="4" placeholder="I'd like to ask about..." required></textarea>
-          <button class="btn btn-dark submit-btn" type="submit">Send message <span>→</span></button>
-          <p class="form-hint" id="formHint">Demo form: connect an email or backend service to receive real messages.</p>
-        </form>
-      </div>
-      <footer class="site-footer">
-        <span>© <span id="year"></span> DEJA & BREW CAFE</span>
-        <span>MADE WITH ☕ & CARE</span>
-        <span>WEBSITE BY SALMAN KHAN · 26I-3141</span>
-      </footer>
+
+    <!-- THIRD PAGE: CONTACT AND DELIVERY -->
+
+    <section id="contact" class="page">
+
+        <h1>Contact Us</h1>
+
+        <p>Welcome to Deja & Brew Cafe!</p>
+
+        <p>Email: your-email@example.com</p>
+
+        <p>Phone: Add Your Phone Number</p>
+
+        <p>Address: Add Your Cafe Address</p>
+
+        <h2>Delivery Available</h2>
+
+        <p>
+            Contact us to place your coffee order.
+        </p>
+
+        <button onclick="showPage('home')">
+            Back to Home
+        </button>
+
     </section>
-  </main>
-  <script src="script.js"></script>
+
+
+    <!-- JAVASCRIPT FOR PAGE SWITCHING -->
+
+    <script>
+
+        function showPage(pageName) {
+
+            let pages = document.querySelectorAll(".page");
+
+            pages.forEach(function(page) {
+
+                page.classList.remove("active");
+
+            });
+
+            document.getElementById(pageName)
+                    .classList.add("active");
+
+        }
+
+    </script>
+
+
+    <!--
+        Created By: Salman Khan
+        Roll Number: 26I3141
+        Project: Cafe Shop Website
+    -->
+
 </body>
+
 </html>
